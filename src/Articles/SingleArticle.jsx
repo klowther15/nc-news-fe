@@ -1,13 +1,18 @@
 import { useEffect , useState } from "react";
+import { Link } from "react-router-dom";
 import {getSingleArticle} from '../ApiCalls/getSingleArticle';
 import { useParams } from "react-router-dom";
 import Header from "../homepageComponents/Header";
 import Nav from "../homepageComponents/Nav";
 import { updateArticleVotes } from "../ApiCalls/updateVotes";
+import CommentsList from "../Comments/CommentsList";
+import CommentsCard from "../Comments/CommentsCard";
 
 const SingleArticlePage = () => {
+
 const [article, setArticle] = useState(null);
 const [votes, setVotes] = useState(0);
+const [isVisible, setIsVisible] = useState(false)
 const { article_id } = useParams();
 
 
@@ -49,8 +54,14 @@ return(
     <p>Topic: {article.topic}</p>
     <p>Votes: {votes}</p>
     <button onClick={handleVotes}>VOTE FOR ME!</button>
+   <button onClick={() => setIsVisible(!isVisible)}>{isVisible ? "Hide Comments" : `Show ${article.comment_count} Comments`}</button>
     <p>{article.created_at}</p>
     </div>
+    {isVisible && (
+        <div>
+            <CommentsList />
+        </div>
+    )}
     </div>
 )
 }

@@ -29,8 +29,6 @@ const CommentsList = () => {
 
     return(
         <div>
-        <Header />
-        <Nav />
         <CommentsCard comments={comments}/>
         </div>
     )
