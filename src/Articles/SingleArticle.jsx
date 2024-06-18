@@ -23,7 +23,9 @@ const handleVotes = () => {
         setVotes(data.votes)
     })
     .catch((err) => {
-        console.log(err)
+        return (
+            <div>Unable to complete vote request.</div>
+        )
     })
 }
 
