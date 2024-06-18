@@ -7,7 +7,7 @@ const getSingleArticle = (id) => {
         return response.data
     })
     .catch((err) => {
-        console.log(err)
+        return "ERROR"
     })
 
 }

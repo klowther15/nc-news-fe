@@ -22,7 +22,7 @@ if(!article){
         </div>
     )
 }
-console.log(article)
+
 return(
     <div>
     <Header/>
