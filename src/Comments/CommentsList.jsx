@@ -34,7 +34,6 @@ const CommentsList = () => {
         <CommentsCard comments={comments}/>
         </div>
     )
-
 }
 
 export default CommentsList;

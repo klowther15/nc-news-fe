@@ -13,6 +13,12 @@ const ArticlesList = () => {
         })
     }, [])
 
+    if(!articles){
+        return(
+        <p>Loading...</p>
+        )
+    }
+
  return (
     <div>
     <Header /> 
