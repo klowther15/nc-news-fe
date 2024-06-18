@@ -1,5 +1,27 @@
+:root{
+  background-color: rgb(223, 221, 221);
+}
 .articleCards{
-  background-color: red;
+  color: rgb(218, 4, 4);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border-image-width: auto;
+  background-color: rgb(193, 191, 191);
 }
+.header{
+  color: rgb(218, 4, 4);
+  background-color: rgb(193, 191, 191);
+}
+.singleArticlePage{
+  color: rgb(218, 4, 4);
+  background-color:rgb(193, 191, 191);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color:rgb(218, 4, 4);
+}
+button{
+  background-color: rgb(193, 191, 191);
+}
+
+
