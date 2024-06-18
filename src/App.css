@@ -6,6 +6,9 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border-image-width: auto;
   background-color: rgb(193, 191, 191);
+  border-radius: 2%;
+  padding: 2%;
+  margin: 2%;
 }
 .header{
   color: rgb(218, 4, 4);
@@ -15,18 +18,31 @@
   color: rgb(218, 4, 4);
   background-color:rgb(193, 191, 191);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 2%;
+  padding: 2%;
+  margin: 2%;
 }
 .nav{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color:rgb(218, 4, 4);
+  background-color:rgb(193, 191, 191);
 }
 button{
-  background-color: rgb(193, 191, 191);
+  background-color: rgb(218, 4, 4);
+  margin:0.5em;
 }
 .commentsCards{
   color: rgb(218, 4, 4);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border-image-width: auto;
   background-color: rgb(193, 191, 191);
+  border-radius: 2%;
+  padding: 2%;
+  margin: 2%;
+}
+img{
+  border-radius: 8px;
+  padding: 0rem;
+  max-width:100%;
+  height:auto;
 }
 
