@@ -28,13 +28,13 @@ return(
     <Header/>
     <Nav/>
     <div className="singleArticlePage">
-    <h2>{article.data.title}</h2>
-    <p>By {article.data.author}</p>
-    <img src={article.data.article_img_url} alt={article.data.topic}/>
-    <p>{article.data.body}</p>
-    <p>Topic: {article.data.topic}</p>
-    <p>Votes: {article.data.votes}</p>
-    <p>{article.data.created_at}</p>
+    <h2>{article.title}</h2>
+    <p>By {article.author}</p>
+    <img src={article.article_img_url} alt={article.topic}/>
+    <p>{article.body}</p>
+    <p>Topic: {article.topic}</p>
+    <p>Votes: {article.votes}</p>
+    <p>{article.created_at}</p>
     </div>
     </div>
 )
