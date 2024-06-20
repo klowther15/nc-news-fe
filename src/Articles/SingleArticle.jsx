@@ -1,12 +1,11 @@
 import { useEffect , useState } from "react";
-import { Link } from "react-router-dom";
 import {getSingleArticle} from '../ApiCalls/getSingleArticle';
 import { useParams } from "react-router-dom";
 import Header from "../homepageComponents/Header";
 import Nav from "../homepageComponents/Nav";
 import { updateArticleVotes } from "../ApiCalls/updateVotes";
 import CommentsList from "../Comments/CommentsList";
-import CommentsCard from "../Comments/CommentsCard";
+import PostAComment from "../Comments/PostAComment";
 
 const SingleArticlePage = () => {
 
@@ -57,6 +56,7 @@ return(
    <button onClick={() => setIsVisible(!isVisible)}>{isVisible ? "Hide Comments" : `Show ${article.comment_count} Comments`}</button>
     <p>{article.created_at}</p>
     </div>
+        <PostAComment article_id={article_id}/>
     {isVisible && (
         <div>
             <CommentsList />
