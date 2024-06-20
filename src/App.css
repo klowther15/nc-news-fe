@@ -46,4 +46,8 @@ img{
   max-width:100%;
   height:auto;
 }
+.commentInputBox{
+  height: 100px;
+  width: 500px;
+}
 

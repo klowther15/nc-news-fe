@@ -1,7 +1,7 @@
 const CommentsCard = ({comments}) => {
 
 return(
-    <ol>
+    <ul>
     {comments.map((comment) => {
         return (
             <li key={comment.comment_id} className="commentsCards">
@@ -13,7 +13,7 @@ return(
         )
     })
 }
-</ol>)
+</ul>)
 
 }
 
