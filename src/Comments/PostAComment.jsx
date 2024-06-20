@@ -12,8 +12,8 @@ const PostAComment = ({article_id}) => {
     const handleSubmit = (event) => {
         event.preventDefault()
         postAComment(article_id, comment)
-        .then((data) => {
-            alert("comment posted!")
+        .then(() => {
+            alert("Comment successfully posted!")
             setComment("")
         })
     }

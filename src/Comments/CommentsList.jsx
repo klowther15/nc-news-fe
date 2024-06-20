@@ -19,6 +19,7 @@ const CommentsList = () => {
         })
     }, [article_id])
 
+
     if(!comments){
         return(
             <div>

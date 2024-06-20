@@ -14,7 +14,6 @@ const [votes, setVotes] = useState(0);
 const [isVisible, setIsVisible] = useState(false)
 const { article_id } = useParams();
 
-
 useEffect(() => {
    getSingleArticle(article_id).then((data) => {
         setArticle(data)
@@ -40,7 +39,6 @@ if(!article){
         </div>
     )
 }
-
 return(
     <div>
     <Header/>
