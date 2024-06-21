@@ -2,8 +2,6 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { getComments } from "../ApiCalls/getComments";
 import CommentsCard from "./CommentsCard"
-import Header from "../homepageComponents/Header";
-import Nav from "../homepageComponents/Nav";
 
 const CommentsList = () => {
 

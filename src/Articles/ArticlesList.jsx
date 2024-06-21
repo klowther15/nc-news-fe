@@ -3,6 +3,9 @@ import { useEffect , useState } from 'react';
 import ArticleCard from './ArticleCard';
 import Header from '../homepageComponents/Header'
 import Nav from '../homepageComponents/Nav'
+import ViewingAs from '../Users/ViewingAs';
+import UsersList from '../Users/UsersList';
+
 const ArticlesList = () => {
 
     const [articles, setArticles] = useState([])
@@ -23,6 +26,7 @@ const ArticlesList = () => {
     <div>
     <Header /> 
     <Nav />
+    <UsersList />
     <ArticleCard articles={articles}/>
     </div>
  )

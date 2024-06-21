@@ -7,7 +7,7 @@ import { updateArticleVotes } from "../ApiCalls/updateVotes";
 import CommentsList from "../Comments/CommentsList";
 import PostAComment from "../Comments/PostAComment";
 
-const SingleArticlePage = () => {
+const SingleArticlePage = ({selectedUsername}) => {
 
 const [article, setArticle] = useState(null);
 const [votes, setVotes] = useState(0);
@@ -45,6 +45,9 @@ return(
     <div>
     <Header/>
     <Nav/>
+    {/* {selectedUsername && (
+        <h2>interacting as {selectedUsername.username}</h2>
+    )} */}
     <div className="singleArticlePage">
     <h2>{article.title}</h2>
     <p>By {article.author}</p>
@@ -56,7 +59,7 @@ return(
    <button onClick={() => setIsVisible(!isVisible)}>{isVisible ? "Hide Comments" : `Show ${article.comment_count} Comments`}</button>
     <p>{article.created_at}</p>
     </div>
-        <PostAComment article_id={article_id}/>
+        <PostAComment article_id={article_id} selectedUsername={selectedUsername}/>
     {isVisible && (
         <div>
             <CommentsList />

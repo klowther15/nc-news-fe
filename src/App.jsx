@@ -6,6 +6,8 @@ import ArticlesList from '../src/Articles/ArticlesList'
 import './App.css'
 import SingleArticlePage from './Articles/SingleArticle';
 import CommentsList from './Comments/CommentsList';
+import UsersList from './Users/UsersList';
+
 
 function App() {
   
@@ -17,6 +19,7 @@ function App() {
     <Route path="/articles" element= {<ArticlesList/>}/>
     <Route path="/articles/:article_id" element={<SingleArticlePage/>}/>
     <Route path="/articles/:article_id/comments" element={<CommentsList/>}/>
+    <Route path="/users" element={<UsersList/>}/>
     </Routes>
     </div>
    
