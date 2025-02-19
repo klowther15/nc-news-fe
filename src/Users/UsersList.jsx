@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import CommentsList from '../Comments/CommentsList';
 import { getUsers } from '../ApiCalls/getUsers';
 import UsersCard from './UsersCard';
-import Header from '../homepageComponents/Header';
 import Nav from '../homepageComponents/Nav';
 import ViewingAs from './ViewingAs';
 
